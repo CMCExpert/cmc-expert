@@ -13,7 +13,7 @@
 
   function renderCategories(){
     box.innerHTML = '<h2 class="stitle" style="margin-bottom:6px">Pick a category</h2>' +
-      '<p class="sub">10 questions per round, instant feedback with explanations. Your best score per category is saved on this device.</p>' +
+      '<p class="sub">Up to 10 questions per round, instant feedback with explanations. Your best score per category is saved on this device.</p>' +
       '<div class="catgrid">' + CATS.map(c=>{
         const n = QUESTIONS.filter(q=>q.c===c).length;
         const b = getBest(c);
@@ -72,7 +72,7 @@
     box.innerHTML =
       '<div class="qmeta">'+s.cat+' · Round complete</div>' +
       '<div class="scorebig">'+s.score+' / '+s.pool.length+'</div>' +
-      '<div class="scoremsg">'+msg+'<br>Best in this category: '+getBest(s.cat)+'/'+ROUND+'</div>' +
+      '<div class="scoremsg">'+msg+'<br>Best in this category: '+getBest(s.cat)+'/'+s.pool.length+'</div>' +
       '<div class="qnav" style="justify-content:center;gap:12px">' +
         '<button class="btn ghost" id="again" style="color:var(--teal-d);border-color:var(--teal-d)">Retry category</button>' +
         '<button class="btn" id="cats">All categories</button></div>' +

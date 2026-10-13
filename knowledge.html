@@ -8,7 +8,7 @@
 </head>
 <body>
 <header class="site"><div class="wrap nav">
-  <a class="brand" href="index.html">CMC<span>Expert</span></a>
+  <a class="brand" href="index.html">CMC <span>Expert</span></a>
   <nav class="links">
     <a href="index.html">Roadmap</a>
     <a href="journey.html">My Journey</a>
@@ -25,57 +25,234 @@
 
 <section class="block"><div class="wrap">
   <h2 class="stitle">The CMC expert competency map</h2>
-  <p class="sub">Six domains. Depth in two or three, working fluency in all six — that's the bar.</p>
+  <p class="sub">Six domains. Depth in two or three, working fluency in all six — that's the bar.
+  Each domain breaks into sub-disciplines with the concrete techniques, assays, and documents behind them.</p>
   <div class="grid c2">
-    <div class="dom"><h3><span class="n">01</span>Regulatory & guideline mastery</h3>
-      <p>ICH Q5–Q14, FDA/EMA guidance, CTD structure. Know not just what each guideline says,
-      but <em>why</em> it exists and what a reviewer looks for.</p>
-      <ul><li>CTD Module 3 authoring and review</li><li>Meeting packages: pre-IND, EOP2, pre-BLA</li><li>Responding to information requests and CRLs</li></ul></div>
-    <div class="dom"><h3><span class="n">02</span>Drug substance process development</h3>
-      <p>Upstream and downstream: cell line development through purification, characterization,
-      and scale-up — for mAbs, bispecifics, fusion proteins, and microbial products.</p>
-      <ul><li>Platform vs. molecule-specific development</li><li>Impurity clearance strategy (HCP, DNA, aggregates, viruses)</li><li>Process characterization & PPQ</li></ul></div>
-    <div class="dom"><h3><span class="n">03</span>Drug product & formulation</h3>
-      <p>Formulation development, container closure, stability, and delivery — where the molecule
-      meets the patient.</p>
-      <ul><li>Formulation screening and forced degradation</li><li>Stability programs (ICH Q5C / Q1A)</li><li>Device/delivery considerations for biologics</li></ul></div>
-    <div class="dom"><h3><span class="n">04</span>Analytical & comparability</h3>
-      <p>The methods that prove quality: release, characterization, and the comparability
-      exercises that justify every manufacturing change.</p>
-      <ul><li>Method development, qualification, validation (ICH Q14 / Q2)</li><li>Comparability per ICH Q5E</li><li>Reference standards and specifications (Q6B)</li></ul></div>
-    <div class="dom"><h3><span class="n">05</span>Manufacturing, tech transfer & validation</h3>
-      <p>GMP manufacturing, site transfers, and the three stages of process validation.
-      Paper processes don't treat patients.</p>
-      <ul><li>FDA 2011 process validation: design → PPQ → continued verification</li><li>Tech transfer and scale-up/scale-down models</li><li>Deviation, OOS, and change control judgment</li></ul></div>
-    <div class="dom"><h3><span class="n">06</span>CMC strategy & leadership</h3>
-      <p>The director's real job: integrated CMC plans, risk-based decisions, outsourcing strategy,
-      and leading technical teams through filings.</p>
-      <ul><li>Quality risk management (ICH Q9) applied to CMC decisions</li><li>CDMO selection, oversight, and governance</li><li>Lifecycle management (ICH Q12) and PACMPs</li></ul></div>
+
+    <div class="dom"><h3><span class="n">01</span>Upstream process development</h3>
+      <p>From gene to harvest: cell line, culture, and scale-up across CHO and microbial platforms.</p>
+      <p><span class="tag">Cell line &amp; cell banking</span></p>
+      <ul>
+        <li>Stable pool generation, transfection, and single-cell cloning (FACS, ClonePix)</li>
+        <li>Master / working cell bank (MCB/WCB) creation and characterization per ICH Q5D</li>
+        <li>Genetic stability: copy number, sequence confirmation, end-of-production cells</li>
+        <li>Cell line history documentation and adventitious agent testing strategy</li>
+      </ul>
+      <p><span class="tag">Culture process</span></p>
+      <ul>
+        <li>Fed-batch optimization: basal media, feed strategy, and feeding triggers</li>
+        <li>Intensified processes: N-1 perfusion, ATF/TFF perfusion, high-seed fed-batch</li>
+        <li>Scale-down models (ambr15/250) and their qualification against pilot scale</li>
+        <li>Metabolic control: lactate shift, ammonia, osmolality, pCO<sub>2</sub> management</li>
+      </ul>
+      <p><span class="tag">Bioreactor scale-up</span></p>
+      <ul>
+        <li>Scale-up criteria: P/V, kLa, mixing time, tip speed — and their trade-offs</li>
+        <li>Single-use bioreactor scale-up (e.g., ambr250 → 500 L) and facility fit</li>
+        <li>Oxygen transfer, CO<sub>2</sub> stripping, and foam control at manufacturing scale</li>
+        <li>Scale-down model qualification: proving the small model predicts the large</li>
+      </ul>
+      <p><span class="tag">Harvest &amp; clarification</span></p>
+      <ul>
+        <li>Depth filtration trains: capacity, throughput, and filter sizing studies</li>
+        <li>Centrifugation vs. filtration for high-cell-density harvests</li>
+        <li>Bioburden control and hold-time limits before capture</li>
+        <li>Harvest impact on downstream impurity burden (HCP, DNA, aggregates)</li>
+      </ul>
+    </div>
+
+    <div class="dom"><h3><span class="n">02</span>Downstream process development</h3>
+      <p>Purification trains that clear impurities by design, not by luck — platform mAb and beyond.</p>
+      <p><span class="tag">Capture chromatography</span></p>
+      <ul>
+        <li>Protein A chromatography (MabSelect SuRe and equivalents): binding, wash, elution</li>
+        <li>Dynamic binding capacity (DBC) determination and resin screening</li>
+        <li>Resin lifetime / cycling studies and lifetime limits in the filing</li>
+        <li>HCP, DNA, and aggregate clearance demonstrated at the capture step</li>
+      </ul>
+      <p><span class="tag">Polish chromatography</span></p>
+      <ul>
+        <li>Cation exchange (CEX): bind-elute vs. flow-through modes for charge variants</li>
+        <li>Anion exchange (AEX) flow-through for DNA, endotoxin, and virus clearance</li>
+        <li>Mixed-mode and hydrophobic interaction (HIC) for aggregate removal</li>
+        <li>UF/DF: concentration, buffer exchange, and formulation into final matrix</li>
+      </ul>
+      <p><span class="tag">Viral clearance</span></p>
+      <ul>
+        <li>Low-pH hold inactivation: kinetics, bracketing, and worst-case conditions</li>
+        <li>Viral filtration (20 nm): flux decay, pressure limits, and filter validation</li>
+        <li>Clearance study design with model viruses (X-MuLV, MVM, PRV, Reo-3)</li>
+        <li>Orthogonal step summation and claims per ICH Q5A(R2)</li>
+      </ul>
+      <p><span class="tag">Process characterization</span></p>
+      <ul>
+        <li>Scale-down model qualification for each unit operation</li>
+        <li>Risk ranking (FMEA) to separate critical from non-critical parameters</li>
+        <li>Proven acceptable ranges (PARs) and their link to PPQ acceptance criteria</li>
+        <li>Impurity clearance validation across the full train (spiking studies)</li>
+      </ul>
+    </div>
+
+    <div class="dom"><h3><span class="n">03</span>Analytical &amp; characterization</h3>
+      <p>The methods that prove quality: release, stability-indicating, and deep characterization.</p>
+      <p><span class="tag">Release &amp; stability assays</span></p>
+      <ul>
+        <li>SEC for aggregates/fragments; CEX and cIEF for charge variants</li>
+        <li>CE-SDS (reduced / non-reduced) for size heterogeneity and clipping</li>
+        <li>Potency: cell-based bioassays, binding ELISA, and relative potency design</li>
+        <li>Subvisible particles: MFI, HIAC, and compendial particulate matter</li>
+      </ul>
+      <p><span class="tag">Structure &amp; post-translational modifications</span></p>
+      <ul>
+        <li>Peptide mapping by LC-MS/MS: deamidation, oxidation, isomerization, glycation</li>
+        <li>N-glycan profiling: released glycan HILIC and intact-mass glycoform analysis</li>
+        <li>Disulfide mapping and free thiol quantitation</li>
+        <li>Higher-order structure: DSC, CD, HDX-MS, and forced-degradation comparability</li>
+      </ul>
+      <p><span class="tag">Impurity &amp; safety methods</span></p>
+      <ul>
+        <li>HCP: process-specific ELISA plus LC-MS/MS coverage analysis</li>
+        <li>Residual DNA (qPCR), Protein A leachate, and host-cell protein risk ranking</li>
+        <li>Endotoxin (LAL / rFC), bioburden, and mycoplasma (rapid NAT methods)</li>
+        <li>Elemental impurities risk assessment per ICH Q3D</li>
+      </ul>
+      <p><span class="tag">Method lifecycle</span></p>
+      <ul>
+        <li>Analytical procedure development with QbD logic per ICH Q14</li>
+        <li>Qualification vs. full validation per ICH Q2(R2) by method category</li>
+        <li>Reference standard qualification, trending, and replacement strategy</li>
+        <li>Method bridging and comparability support for process changes (Q5E)</li>
+      </ul>
+    </div>
+
+    <div class="dom"><h3><span class="n">04</span>Formulation &amp; drug product</h3>
+      <p>Where the molecule meets the patient: formulation, fill-finish, and delivery.</p>
+      <p><span class="tag">Formulation development</span></p>
+      <ul>
+        <li>Buffer/pH and excipient screening (sucrose, trehalose, polysorbate, amino acids)</li>
+        <li>Forced degradation and stress studies to identify degradation pathways</li>
+        <li>High-concentration behavior: viscosity, opalescence, and self-association</li>
+        <li>Freeze-thaw, agitation, and shipping robustness studies</li>
+      </ul>
+      <p><span class="tag">Fill-finish</span></p>
+      <ul>
+        <li>Aseptic filling into vials, prefilled syringes, and cartridges</li>
+        <li>Sterile filtration validation and filling process characterization</li>
+        <li>Container closure integrity: dye ingress, helium leak, microbial ingress</li>
+        <li>Lyophilization cycle development: freezing, primary/secondary drying design space</li>
+      </ul>
+      <p><span class="tag">Stability program</span></p>
+      <ul>
+        <li>Stability protocol design per ICH Q5C / Q1A: long-term, accelerated, stress</li>
+        <li>Shelf-life setting, in-use stability, and photostability (Q1B)</li>
+        <li>Stability-indicating methods and specification trending over shelf life</li>
+        <li>Transport qualification and temperature excursion assessment</li>
+      </ul>
+      <p><span class="tag">Device &amp; combination product</span></p>
+      <ul>
+        <li>Prefilled syringe / autoinjector design inputs and essential performance requirements</li>
+        <li>Combination product regulation (21 CFR Part 4) and device constituent expectations</li>
+        <li>Extractables and leachables (E&amp;L) studies on container and device materials</li>
+        <li>Human factors and usability considerations for self-administration</li>
+      </ul>
+    </div>
+
+    <div class="dom"><h3><span class="n">05</span>CMC regulatory &amp; filings</h3>
+      <p>Turning science into approvals: the dossier, the meetings, and the defense.</p>
+      <p><span class="tag">Dossier authoring</span></p>
+      <ul>
+        <li>CTD Module 3 structure (ICH M4Q): 3.2.S drug substance, 3.2.P drug product</li>
+        <li>Process description, batch records summary, and manufacturing flow diagrams</li>
+        <li>Justification of specifications and analytical procedure summaries</li>
+        <li>Amendments, supplements, and post-approval submission strategy</li>
+      </ul>
+      <p><span class="tag">Health authority interactions</span></p>
+      <ul>
+        <li>Pre-IND / INTERACT meetings: question strategy and briefing packages</li>
+        <li>End-of-phase-2 and pre-BLA meetings: aligning on CMC expectations</li>
+        <li>Responding to information requests (IRs), refuse-to-file (RTF), and CRLs</li>
+        <li>Scientific advice (EMA) and parallel FDA/EMA engagement</li>
+      </ul>
+      <p><span class="tag">Specifications &amp; control strategy</span></p>
+      <ul>
+        <li>Setting acceptance criteria per ICH Q6B with clinical and process justification</li>
+        <li>CQA → CPP → control strategy linkage (ICH Q8 / Q11)</li>
+        <li>Two-tier specifications: release vs. stability, and shelf-life specs</li>
+        <li>Stability commitments and post-approval stability protocols</li>
+      </ul>
+      <p><span class="tag">Lifecycle &amp; comparability</span></p>
+      <ul>
+        <li>Comparability exercises for manufacturing changes per ICH Q5E</li>
+        <li>Post-approval change management protocols (PACMPs) per ICH Q12</li>
+        <li>Annual reports, variations (Type IA/IB/II), and prior-approval supplements</li>
+        <li>Biosimilarity exercises: analytical similarity tiers (FDA / EMA biosimilar guidance)</li>
+      </ul>
+    </div>
+
+    <div class="dom"><h3><span class="n">06</span>Tech transfer, GMP &amp; validation</h3>
+      <p>Paper processes don't treat patients: manufacturing, transfer, and proof of control.</p>
+      <p><span class="tag">Tech transfer</span></p>
+      <ul>
+        <li>Donor/receiver gap analysis and transfer risk assessment</li>
+        <li>Facility fit: scale, single-use vs. stainless, and equipment capability</li>
+        <li>Transfer protocols, acceptance criteria, and demonstration batches</li>
+        <li>CDMO selection, governance, and oversight models</li>
+      </ul>
+      <p><span class="tag">Process validation</span></p>
+      <ul>
+        <li>FDA 2011 three-stage model: design → PPQ → continued process verification</li>
+        <li>PPQ protocol and report: sampling plans, acceptance criteria, and statistics</li>
+        <li>Continued process verification (CPV): trending, alert/action limits, and review cadence</li>
+        <li>Revalidation triggers and concurrent validation rationale</li>
+      </ul>
+      <p><span class="tag">GMP quality system</span></p>
+      <ul>
+        <li>ICH Q7 (API GMP) and Q10 (pharmaceutical quality system) in daily operation</li>
+        <li>Deviation, OOS/OOT investigations: root cause, impact assessment, and CAPA</li>
+        <li>Change control: classification, comparability needs, and regulatory reporting</li>
+        <li>Batch record review, batch release, and QP certification (EU)</li>
+      </ul>
+      <p><span class="tag">Facilities, utilities &amp; PAT</span></p>
+      <ul>
+        <li>Cleaning validation: HBEL/PDE-based limits and worst-case product grouping</li>
+        <li>WFI, clean steam, and HVAC qualification and routine monitoring</li>
+        <li>Aseptic process simulation (media fills) and contamination control strategy</li>
+        <li>PAT implementation per FDA PAT guidance: in-line monitoring toward real-time release</li>
+      </ul>
+    </div>
+
   </div>
 </div></section>
 
 <section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-  <h2 class="stitle">Essential guidelines — the short list</h2>
+  <h2 class="stitle">Essential guidelines — the working list</h2>
   <p class="sub">If you can explain each of these in two sentences — what it covers and why it matters —
-  you're ahead of most candidates.</p>
+  you're ahead of most candidates. The "watch for" column is what reviewers and inspectors actually probe.</p>
   <table class="guide">
-    <tr><th>Guideline</th><th>Topic</th><th>Why a CMC expert cares</th></tr>
-    <tr><td class="code">ICH Q5A(R2)</td><td>Viral safety evaluation of biotechnology products</td><td>Defines how viral clearance is claimed and summed across steps — the basis of every viral-clearance section you'll ever write or defend.</td></tr>
-    <tr><td class="code">ICH Q5B</td><td>Analysis of the expression construct in production cells</td><td>What you must prove about the genetic construct and its stability in the cell substrate.</td></tr>
-    <tr><td class="code">ICH Q5C</td><td>Stability testing of biotechnological products</td><td>Stability protocol design, specs over shelf life — directly shapes your DP strategy.</td></tr>
-    <tr><td class="code">ICH Q5D</td><td>Cell substrates: derivation and characterisation</td><td>MCB/WCB requirements — the foundation every upstream process stands on.</td></tr>
-    <tr><td class="code">ICH Q5E</td><td>Comparability after manufacturing changes</td><td>The single most-used guideline in CMC leadership: every process change lives or dies here.</td></tr>
-    <tr><td class="code">ICH Q6B</td><td>Specifications for biotech products</td><td>How acceptance criteria are set and justified — release specs are a negotiation with data.</td></tr>
-    <tr><td class="code">ICH Q7</td><td>GMP for active pharmaceutical ingredients</td><td>The GMP rulebook for DS manufacturing, including biologics.</td></tr>
-    <tr><td class="code">ICH Q8(R2)</td><td>Pharmaceutical development (QbD)</td><td>Design space, CQAs, control strategy — the language of modern filings.</td></tr>
-    <tr><td class="code">ICH Q9</td><td>Quality risk management</td><td>How to prioritize: risk to the patient decides where CMC effort goes.</td></tr>
-    <tr><td class="code">ICH Q10</td><td>Pharmaceutical quality system</td><td>The management system behind every GMP operation you'll oversee.</td></tr>
-    <tr><td class="code">ICH Q11</td><td>Development and manufacture of drug substances</td><td>Links development to manufacturing for both chemical and biotech DS.</td></tr>
-    <tr><td class="code">ICH Q12</td><td>Product lifecycle management</td><td>Post-approval changes, PACMPs — CMC doesn't end at approval.</td></tr>
-    <tr><td class="code">ICH Q13</td><td>Continuous manufacturing</td><td>Increasingly relevant as continuous DS/DP moves from pilot to filing.</td></tr>
-    <tr><td class="code">ICH Q14</td><td>Analytical procedure development</td><td>Companion to Q2: how methods are developed with the same QbD logic as processes.</td></tr>
-    <tr><td class="code">ICH M4Q</td><td>CTD — Module 3: Quality</td><td>The dossier structure itself. Know where every piece of CMC data lives.</td></tr>
-    <tr><td class="code">FDA 2011 PV</td><td>Process validation: 3 stages</td><td>Stage 1 design → Stage 2 PPQ → Stage 3 continued verification. The lifecycle model for validation.</td></tr>
+    <tr><th>Guideline</th><th>Topic</th><th>Why a CMC expert cares</th><th>Watch for</th></tr>
+    <tr><td class="code">ICH Q1A(R2)</td><td>Stability testing of new drug substances and products</td><td>The parent stability guideline: long-term and accelerated conditions, and what the data must support — the backbone of every shelf-life claim.</td><td>Reviewers check that accelerated data genuinely supports the proposed storage statement; bracketing or matrixing must be justified up front, not after the fact.</td></tr>
+    <tr><td class="code">ICH Q2(R2)</td><td>Validation of analytical procedures</td><td>Defines what "validated" actually means for each method category — specificity, linearity, accuracy, precision — the yardstick every release method is measured against.</td><td>Q2(R2) together with Q14 now expects a method operable design region; a method validated at a single setpoint with no robustness data draws questions.</td></tr>
+    <tr><td class="code">ICH Q3A(R2) / Q3B(R2)</td><td>Impurities in new drug substances / products</td><td>Written for small molecules, but the tiered impurity logic — reporting, identification, qualification thresholds — shapes how every impurity discussion is framed.</td><td>For biologics, apply the same tiered thinking to process-related impurities; "levels are low" without a qualification argument doesn't survive review.</td></tr>
+    <tr><td class="code">ICH Q5A(R2)</td><td>Viral safety evaluation of biotechnology products</td><td>Defines how viral clearance is claimed and summed across steps — the basis of every viral-clearance section you'll ever write or defend.</td><td>Clearance factors can't be summed across non-orthogonal steps; reviewers will challenge the orthogonality claim, so document the mechanism for each step.</td></tr>
+    <tr><td class="code">ICH Q5B</td><td>Analysis of the expression construct in production cells</td><td>What you must prove about the genetic construct and its stability in the cell substrate.</td><td>Sequence drift over cell age matters — end-of-production cells must be characterized, not just the MCB.</td></tr>
+    <tr><td class="code">ICH Q5C</td><td>Stability testing of biotechnological products</td><td>Stability protocol design, specs over shelf life — directly shapes your DP strategy.</td><td>Specs that widen at end of shelf life need data at every claimed timepoint; extrapolation beyond the data is the fastest route to an information request.</td></tr>
+    <tr><td class="code">ICH Q5D</td><td>Cell substrates: derivation and characterisation</td><td>MCB/WCB requirements — the foundation every upstream process stands on.</td><td>Adventitious agent testing of cell banks is non-negotiable; a missing test can't be backfilled later without repeating the banking.</td></tr>
+    <tr><td class="code">ICH Q5E</td><td>Comparability after manufacturing changes</td><td>The single most-used guideline in CMC leadership: every process change lives or dies here.</td><td>Pre-define comparability acceptance criteria before generating data — post-hoc criteria read as cherry-picking.</td></tr>
+    <tr><td class="code">ICH Q6B</td><td>Specifications for biotech products</td><td>How acceptance criteria are set and justified — release specs are a negotiation with data.</td><td>Every spec needs justification tied to clinical or process experience; "platform precedent" alone is thin for novel quality attributes.</td></tr>
+    <tr><td class="code">ICH Q7</td><td>GMP for active pharmaceutical ingredients</td><td>The GMP rulebook for DS manufacturing, including biologics.</td><td>Inspectors focus on the grey zones: multi-product facilities, shared equipment, and cleaning between campaigns.</td></tr>
+    <tr><td class="code">ICH Q8(R2)</td><td>Pharmaceutical development (QbD)</td><td>Design space, CQAs, control strategy — the language of modern filings.</td><td>A design-space claim without demonstrated scale-independence gets narrowed or rejected — qualify the scale-down model first.</td></tr>
+    <tr><td class="code">ICH Q9</td><td>Quality risk management</td><td>How to prioritize: risk to the patient decides where CMC effort goes.</td><td>Risk assessments that conclude "low risk" for everything signal a broken process — reviewers notice.</td></tr>
+    <tr><td class="code">ICH Q10</td><td>Pharmaceutical quality system</td><td>The management system behind every GMP operation you'll oversee.</td><td>CAPA effectiveness checks are where quality systems live or die; "retraining" as the sole CAPA is a classic red flag.</td></tr>
+    <tr><td class="code">ICH Q11</td><td>Development and manufacture of drug substances</td><td>Links development to manufacturing for both chemical and biotech DS.</td><td>Starting-material justification for biologics (cell banks, key raw materials) gets the same scrutiny as chemical starting materials.</td></tr>
+    <tr><td class="code">ICH Q12</td><td>Product lifecycle management</td><td>Post-approval changes, PACMPs — CMC doesn't end at approval.</td><td>A PACMP is only as good as its acceptance criteria; vague criteria get rejected, and reportable vs. notifiable categories must be explicit.</td></tr>
+    <tr><td class="code">ICH Q13</td><td>Continuous manufacturing</td><td>Increasingly relevant as continuous DS/DP moves from pilot to filing.</td><td>Residence time distribution and state of control must be demonstrated; "continuous" isn't automatically better in a reviewer's eyes.</td></tr>
+    <tr><td class="code">ICH Q14</td><td>Analytical procedure development</td><td>Companion to Q2: how methods are developed with the same QbD logic as processes.</td><td>Establish the method operable design region (MODR) during development; bolting it on at validation time is painful.</td></tr>
+    <tr><td class="code">ICH S6(R1)</td><td>Preclinical safety evaluation of biotechnology-derived pharmaceuticals</td><td>Defines the nonclinical package — species selection, tissue cross-reactivity, study design — that your CMC material must support.</td><td>If tox material differs from clinical material, expect a comparability question before the IND is even filed; make tox lots representative.</td></tr>
+    <tr><td class="code">ICH E6(R3)</td><td>Good clinical practice</td><td>Mostly clinical, but CMC-relevant: investigational product must be manufactured, blinded, labeled, and distributed under GMP with full traceability.</td><td>Label/blinding mix-ups and IP accountability gaps are common inspection findings — CMC owns that supply chain.</td></tr>
+    <tr><td class="code">ICH M4Q</td><td>CTD — Module 3: Quality</td><td>The dossier structure itself. Know where every piece of CMC data lives.</td><td>Misplaced data (e.g., characterization in 3.2.S.3 vs. 3.2.S.4) creates reviewer friction; follow the granularity guidance.</td></tr>
+    <tr><td class="code">FDA PAT guidance</td><td>Process Analytical Technology framework (2004)</td><td>The regulatory basis for real-time release testing and in-line control — the foundation of modern CPV and continuous manufacturing filings.</td><td>A PAT method used for control decisions needs the same validation rigor as a lab method; "for information only" sensors can't support control claims.</td></tr>
+    <tr><td class="code">FDA 2011 PV</td><td>Process validation: 3 stages</td><td>Stage 1 design → Stage 2 PPQ → Stage 3 continued verification. The lifecycle model for validation.</td><td>Stage 3 CPV plans that are just "monitor and trend" with no action limits get questioned; define what triggers an investigation.</td></tr>
+    <tr><td class="code">EMA biosimilar</td><td>Similar biological medicinal products (CHMP/437/04 Rev. 1)</td><td>The EU biosimilarity framework: a stepwise comparability exercise where analytics carry the most weight — the playbook for any biosimilar program.</td><td>EMA expects the most sensitive assays first; a weak analytical package can't be rescued by a larger clinical study.</td></tr>
   </table>
   <div class="note"><b>Study tip:</b> don't memorize — derive. For each guideline, ask: <em>what patient-safety
   problem was the industry failing at when this was written?</em> The answer is the guideline's real content.</div>
